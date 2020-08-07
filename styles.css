@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #d35266;
+  --color-2: #888;
+  --color-3: #383838;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* ============== Common Styles ============== */
+
+.text-1 {
+  color: var(--color-1);
+}
+
+.text-2 {
+  color: var(--color-2);
+}
+
+.text-3 {
+  color: var(--color-3);
+}
+
+.text-white {
+  color: #fff;
+}
+
+.bg-1 {
+  background-color: var(--color-1);
+}
+
+.bg-2 {
+  background-color: var(--color-2);
+}
+
+.bg-3 {
+  background-color: var(--color-3);
+}
+
+.flex {
+  display: flex;
+}
+
+/* ============== Navbar Styles ============== */
+
+.navbar {
+  height: auto;
+  font-size: 0.85rem;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  align-items: inherit;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 3rem;
+  margin: 0.5rem;
+  width: auto;
+  transition: 0.6s;
+}
+
+.navbar span {
+  font-weight: 700;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 4%;
+  max-width: 7rem;
+  transition: color 0.4s;
+}
+
+.navbar span {
+  display: none;
+}
+
+.nav-btn {
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  padding: 0.2rem 0.7rem;
+  margin-left: 5%;
+}
+
+/* ============== Header Styles ============== */
+
+.header {
+  position: relative;
+  height: 10rem;
+  /*background-image: url(./images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+}
+
+/* ============== Media Querys ============== */
+
+@media only screen and (min-width: 769px) {
+  .navbar {
+    justify-content: start;
+    padding-left: 4.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .navbar span {
+    display: inline;
+  }
+}
+
+/* ============== Hover Styles ============== */
+
+.nav-link:hover {
+  color: var(--color-1);
+}
+
+.logo img:hover {
+  transform: rotatey(180deg);
+}
