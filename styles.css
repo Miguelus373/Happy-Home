@@ -11,6 +11,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  background-color: #f4f5f6;
 }
 
 /* ============== Common Styles ============== */
@@ -41,6 +42,10 @@ body {
 
 .bg-3 {
   background-color: var(--color-3);
+}
+
+.bg-white {
+  background-color: #fff;
 }
 
 .flex {
@@ -164,8 +169,121 @@ body {
   border-bottom-right-radius: 1rem;
 }
 
-/* ============== Media Querys ============== */
+/* ============== Related Styles ============== */
 
+.top-section {
+  max-width: 32rem;
+  margin: 1rem;
+  padding: 0.2rem 2rem;
+  font-size: 0.8rem;
+  box-shadow: grey 0 0 10px;
+}
+
+.related {
+  margin: 0.6rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.related img {
+  width: 100%;
+  max-height: 10rem;
+  max-width: 16rem;
+  margin: 0 auto;
+}
+
+.info {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info h3 {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.info p {
+  margin: 0;
+}
+
+.contact {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.7rem;
+}
+
+.contact a {
+  border: none;
+  box-shadow: 0 0 3px black;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+.contact span {
+  font-weight: 600;
+}
+
+/* ============== Row Ads ============== */
+
+.ad-group {
+  max-width: 32rem;
+  margin: 1rem auto;
+  padding: 0.2rem 2rem;
+  font-size: 0.8rem;
+}
+
+.row-ad {
+  display: grid;
+  grid-template: repeat(4, 1fr) / 100%;
+  row-gap: 1.5rem;
+}
+
+.ad {
+  border: 1px lightgray solid;
+  transition: 0.5s;
+}
+
+.ad img {
+  width: 100%;
+  height: auto;
+}
+
+.ad-info {
+  padding: 1rem;
+}
+
+/* ============== Media Querys ============== */
+@media only screen and (min-width: 575px) {
+  .top-section {
+    max-width: 85%;
+    margin: 2rem auto;
+  }
+
+  .related {
+    flex-wrap: nowrap;
+  }
+
+  .info {
+    max-width: 100%;
+    margin-left: 1rem;
+  }
+
+  .info h3 {
+    text-align: left;
+  }
+
+  .ad-group {
+    max-width: 85%;
+    padding: 0;
+  }
+
+  .row-ad {
+    grid-template: 50% / repeat(2, 50%);
+    grid-gap: 1.3rem;
+  }
+}
 @media only screen and (min-width: 769px) {
   .navbar {
     justify-content: start;
@@ -193,6 +311,15 @@ body {
     width: 50%;
     max-width: 20rem;
   }
+
+  .ad-group {
+    margin: 4rem auto;
+  }
+
+  .row-ad {
+    grid-template: 100% / repeat(4, 1fr);
+    grid-gap: 1.5rem;
+  }
 }
 
 /* ============== Hover Styles ============== */
@@ -205,6 +332,16 @@ body {
   transform: rotatey(180deg);
 }
 
-.zone:hover {
+.zone,
+.top-section,
+.ad {
   cursor: pointer;
+}
+
+.ad:hover {
+  box-shadow: grey 0 0 15px;
+}
+
+.ad img:hover {
+  cursor: zoom-in;
 }
