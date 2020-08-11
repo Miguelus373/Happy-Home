@@ -275,6 +275,84 @@ body {
   bottom: 0;
 }
 
+/* ============== Footer Styles ============== */
+
+.footer {
+  border-top: var(--simple-border);
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.footer-logo span {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.logo-p {
+  padding: 0 2rem;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-links {
+  margin: 1rem 0;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer-links hr {
+  border: none;
+  height: 1px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
+.option {
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 0.2rem 0.4rem;
+  border: var(--simple-border);
+}
+
+.footer-settings {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bar {
+  padding: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-top: var(--simple-border);
+}
+
+.footer-bar p {
+  margin: 0;
+  width: 70%;
+}
+
+.footer-bar i {
+  margin-left: 1rem;
+}
+
 /* ============== Search Page Styles ============== */
 
 .tool-bar {
@@ -289,7 +367,6 @@ body {
 
 .tool-bar i {
   margin-left: 1.4rem;
-  cursor: pointer;
 }
 
 .fa-th-list {
@@ -414,6 +491,14 @@ body {
   .search-result img {
     width: 35%;
   }
+
+  .footer-links {
+    width: 66.66%;
+  }
+
+  .footer-settings {
+    width: 33.33%;
+  }
 }
 @media only screen and (min-width: 769px) {
   .navbar {
@@ -464,6 +549,15 @@ body {
     width: 25%;
     max-width: 11rem;
   }
+
+  .footer-logo,
+  .footer-links {
+    width: 33.33%;
+  }
+
+  .footer-logo {
+    padding: 1rem 0;
+  }
 }
 
 /* ============== Hover Styles ============== */
@@ -479,7 +573,9 @@ body {
 .zone,
 .top-section,
 .ad,
-.checkbox input {
+.checkbox input,
+.option,
+.tool-bar i {
   cursor: pointer;
 }
 
@@ -491,6 +587,11 @@ body {
   cursor: zoom-in;
 }
 
-.text-link:hover {
+.text-link:hover,
+.footer-links a:hover {
   text-decoration: underline;
+}
+
+.footer-links a:hover {
+  color: var(--color-3);
 }
