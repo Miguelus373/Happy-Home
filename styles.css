@@ -100,6 +100,7 @@ body {
 
 .navbar span {
   font-weight: 700;
+  display: none;
 }
 
 .nav-link {
@@ -109,10 +110,6 @@ body {
   margin-left: 4%;
   max-width: 7rem;
   transition: color 0.4s;
-}
-
-.navbar span {
-  display: none;
 }
 
 .nav-btn {
@@ -269,7 +266,7 @@ body {
 }
 
 .ad-info {
-  padding: 0rem 1rem 1rem;
+  padding: 0 1rem 1rem;
   height: auto;
   position: relative;
   bottom: 0;
@@ -387,7 +384,7 @@ body {
 }
 
 .checkbox {
-  margin: 0rem 0.5rem 1rem;
+  margin: 0 0.5rem 1rem;
 }
 
 .extras {
@@ -500,6 +497,7 @@ body {
     width: 33.33%;
   }
 }
+
 @media only screen and (min-width: 769px) {
   .navbar {
     justify-content: start;
@@ -567,7 +565,7 @@ body {
 }
 
 .logo img:hover {
-  transform: rotatey(180deg);
+  transform: rotateY(180deg);
 }
 
 .zone,
@@ -575,7 +573,8 @@ body {
 .ad,
 .checkbox input,
 .option,
-.tool-bar i {
+.tool-bar i,
+.footer-bar i {
   cursor: pointer;
 }
 
