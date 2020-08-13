@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   margin: 0;
   background-color: #f4f5f6;
 }
@@ -70,11 +70,6 @@ body {
   text-decoration: none;
 }
 
-.btn-border {
-  border: solid white 2px;
-  border-radius: 1rem;
-}
-
 /* ============== Navbar Styles ============== */
 
 .navbar {
@@ -118,6 +113,26 @@ body {
   border: none;
   padding: 0.2rem 0.7rem;
   margin-left: 4%;
+  display: none;
+}
+
+.search-btn-sm {
+  display: inline;
+}
+
+.user {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user i {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  border-radius: 2rem;
+  border: none;
 }
 
 /* ============== Header Styles ============== */
@@ -127,7 +142,7 @@ body {
   align-items: center;
   padding: 2rem 0;
   position: relative;
-  height: 15rem;
+  height: 11rem;
 }
 
 .header h1 {
@@ -138,49 +153,36 @@ body {
 .slogan {
   font-weight: 600;
   font-size: 15px;
-  margin-bottom: 2.5rem;
 }
 
 .search {
-  flex-wrap: wrap;
-  width: 52%;
-  margin: 0 auto;
+  width: 60%;
+  margin: 1rem auto;
   justify-content: center;
-  align-items: center;
-}
 
-.search-bar {
-  width: 100%;
-}
-
-.zone {
   display: none;
 }
 
-.zone,
-.search-btn {
-  padding: 0.4rem 0.6rem;
-  background-color: transparent;
-  font-size: 1rem;
+.search-item {
+  height: 1.9rem;
+  padding: 0.5rem 0.7rem;
+  margin: 0.1rem;
+  font-size: 0.9rem;
+  border: none;
   outline: none;
+}
+
+.zone {
+  padding: 0.4rem;
+}
+
+.search-btn {
+  text-decoration: none;
+  text-align: center;
 }
 
 .input {
-  height: 2.25rem;
-  width: 75%;
-  border: none;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-  padding: 0 1rem;
-  outline: none;
-}
-
-.search-btn {
-  width: 25%;
-  text-align: center;
-  border: solid white 2px;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  width: 40%;
 }
 
 /* ============== Related Styles ============== */
@@ -231,9 +233,8 @@ body {
 /* ============== Row Ads ============== */
 
 .ad-group {
-  max-width: 32rem;
   margin: 1rem auto;
-  padding: 0.2rem 2rem;
+
   font-size: 0.8rem;
 }
 
@@ -358,14 +359,6 @@ body {
   border-bottom: var(--simple-border);
 }
 
-.d-icons {
-  display: inline-block;
-}
-
-.tool-bar i {
-  margin-left: 1.4rem;
-}
-
 .fa-th-list {
   color: blue;
 }
@@ -427,17 +420,6 @@ body {
 
 .result-info p {
   margin-bottom: 2rem;
-}
-
-.bottom-bar {
-  border-top: var(--simple-border);
-  font-size: 0.8rem;
-  text-align: right;
-}
-
-.bottom-bar i {
-  color: var(--color-3);
-  margin: 0 0.5rem;
 }
 
 /* ============== Media Querys ============== */
@@ -508,22 +490,22 @@ body {
     font-size: 0.8rem;
   }
 
-  .navbar span {
+  .navbar span,
+  .nav-btn {
     display: inline;
   }
 
-  .search-bar,
-  .zone {
-    margin: 0 1rem;
+  .search-btn-sm {
+    display: none;
   }
 
-  .zone {
-    display: inline;
+  .header {
+    height: 15rem;
   }
 
-  .search-bar {
-    width: 50%;
-    max-width: 20rem;
+  .search,
+  .user {
+    display: flex;
   }
 
   .ad-group {
@@ -532,7 +514,11 @@ body {
 
   .row-ad {
     grid-template: 100% / repeat(4, 1fr);
-    grid-gap: 1.2rem;
+    column-gap: 1.2rem;
+  }
+
+  .ad img {
+    height: 42%;
   }
 
   .filters-sm {
