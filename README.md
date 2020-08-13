@@ -1,6 +1,9 @@
-# Capstone Project | Happy Home
+# Happy Home
 
-This is the capstone project for the Html and Css curriculum of the Microverse full time program. I made a Real State online shop page.
+This is a Real State online shopping page, made as the capstone project for Microverse.
+
+> In this project I used different technologies such as flexbox and grid to position the different elements on the page.
+> I also used Media Querys to add responsiveness in three different device sizes.
 
 ![screenshot](./images/Screenshot.png)
 
