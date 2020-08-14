@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://use.fontawesome.com/7089435224.js"></script>
+    <title>Search results - Happy Home</title>
+  </head>
+  <body>
+    <nav class="navbar flex bg-3">
+      <a class="logo flex" href="./index.html">
+        <img class="logo-img" src="./images/logo.png" alt="Logo" />
+        <span class="text-1">HAPPY</span> <span class="text-white">HOME</span>
+      </a>
+      <a class="nav-link ml-sm-4 px-0 text-white" href="#"
+        ><i class="fa fa-th-large" aria-hidden="true"></i>
+        <span class="">COLLECTIONS</span></a
+      >
+      <a class="nav-link ml-sm-4 px-0 text-white" href="#"
+        ><i class="fa fa-eye" aria-hidden="true"></i>
+        <span class="">WATCH LIST</span></a
+      >
+      <a href="#" class="nav-btn bg-1 ml-sm-4 px-3 text-white">ADVERTISE</a>
+      <a href="#" class="nav-btn search-btn-sm bg-1 ml-sm-4 px-3 text-white"
+        >SEARCH</a
+      >
+
+      <div class="user text-white">
+        <a class="nav-link text-white" href="#">Miguelus</a>
+        <i class="fa fa-user-circle-o text-white bg-1" aria-hidden="true"></i>
+      </div>
+    </nav>
+
+    <header class="header bg-1 flex-column">
+      <h1 class="text-white">HAPPY HOME</h1>
+      <p class="text-white slogan">
+        Getting a new home has never been easier
+      </p>
+
+      <div class="search">
+        <select class="zone search-item text-2 bg-white">
+          <option class="text-3">Atlanta</option>
+          <option class="text-3">Boston</option>
+          <option class="text-3">Chicago</option>
+          <option class="text-3">Denver</option>
+          <option class="text-3" selected>Los Angeles</option>
+          <option class="text-3">Minnesota</option>
+          <option class="text-3">New York</option>
+        </select>
+        <input class="input search-item" type="text" value="Beach house" />
+        <a class="search-btn search-item text-white bg-3" href="./search.html"
+          >Search</a
+        >
+      </div>
+    </header>
+
+    <main>
+      <div class="tool-bar bg-white text-2">
+        <span>Showing 70+ Results for "Beach house"</span>
+        <div class="d-icons"></div>
+      </div>
+      <div class="tool-bar bg-white text-2 filters-sm">
+        Add Filters<i class="fa fa-sliders" aria-hidden="true"></i>
+      </div>
+      <div class="flex">
+        <section class="filters bg-white">
+          <h4>Filters <i class="fa fa-sliders" aria-hidden="true"></i></h4>
+          <div>
+            <div class="flex-column checkbox">
+              <h5 class="text-3">Bedrooms:</h5>
+              <span><input type="checkbox" checked /> Any</span>
+              <span><input type="checkbox" /> 1 - 3</span
+              ><span><input type="checkbox" /> 4 - 6 </span>
+              <span><input type="checkbox" /> 7+</span>
+            </div>
+
+            <hr />
+
+            <div class="flex-column checkbox">
+              <h5 class="text-3">Bathrooms:</h5>
+              <span><input type="checkbox" checked /> Any</span>
+              <span><input type="checkbox" /> 1 - 2 </span>
+              <span><input type="checkbox" /> 3 - 4 </span>
+              <span><input type="checkbox" /> 5+</span>
+            </div>
+
+            <hr />
+
+            <div class="flex-column checkbox">
+              <h5 class="text-3">Transaction:</h5>
+              <span><input type="checkbox" checked /> Any</span>
+              <span><input type="checkbox" /> Buy </span>
+              <span><input type="checkbox" /> Rent </span>
+            </div>
+
+            <hr />
+
+            <div class="flex-column checkbox">
+              <h5 class="text-3">Extras:</h5>
+              <span class="extras"><input type="checkbox" /> Furnished </span>
+              <span class="extras"><input type="checkbox" /> Pool </span>
+              <span class="extras"><input type="checkbox" /> Tree House</span>
+              <span class="extras"><input type="checkbox" /> Dog Included</span>
+            </div>
+
+            <hr />
+          </div>
+        </section>
+        <section class="results flex-column">
+          <div class="search-result bg-white flex">
+            <img src="./images/beach-1.jpg" alt="beach-house" />
+            <div class="result-info">
+              <h3 class="text-3">Beautiful Beach House</h3>
+              <p class="text-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                quas expedita nostrum nemo pariatur ea eos corrupti. Ducimus,
+                optio fugit aliquid nam obcaecati impedit maiores delectus
+                assumenda perspiciatis.
+                <a class="text-link" href="#">See more details</a>
+              </p>
+              <a class="bg-1 text-white btn contact" href="#"
+                ><i class="fa fa-phone" aria-hidden="true"></i> Contact
+              </a>
+            </div>
+          </div>
+          <div class="search-result bg-white flex">
+            <img src="./images/beach-2.jpg" alt="beach-house" />
+            <div class="result-info">
+              <h3 class="text-3">Private House Near The Ocean</h3>
+              <p class="text-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                quas expedita nostrum nemo pariatur ea eos corrupti. Ducimus,
+                optio fugit aliquid nam obcaecati impedit maiores delectus
+                assumenda perspiciatis.
+                <a class="text-link" href="#">See more details</a>
+              </p>
+              <a class="bg-1 text-white btn contact" href="#"
+                ><i class="fa fa-phone" aria-hidden="true"></i> Contact
+              </a>
+            </div>
+          </div>
+          <div class="search-result bg-white flex">
+            <img src="./images/beach-3.jpg" alt="beach-house" />
+            <div class="result-info">
+              <h3 class="text-3">Brand New Luxury House</h3>
+              <p class="text-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                quas expedita nostrum nemo pariatur ea eos corrupti. Ducimus,
+                optio fugit aliquid nam obcaecati impedit maiores delectus
+                assumenda perspiciatis.
+                <a class="text-link" href="#">See more details</a>
+              </p>
+              <a class="bg-1 text-white btn contact" href="#"
+                ><i class="fa fa-phone" aria-hidden="true"></i> Contact
+              </a>
+            </div>
+          </div>
+          <div class="search-result bg-white flex">
+            <img src="./images/beach-4.jpg" alt="beach-house" />
+            <div class="result-info">
+              <h3 class="text-3">Vacational Beach House</h3>
+              <p class="text-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                quas expedita nostrum nemo pariatur ea eos corrupti. Ducimus,
+                optio fugit aliquid nam obcaecati impedit maiores delectus
+                assumenda perspiciatis.
+                <a class="text-link" href="#">See more details</a>
+              </p>
+              <a class="bg-1 text-white btn contact" href="#"
+                ><i class="fa fa-phone" aria-hidden="true"></i> Contact
+              </a>
+            </div>
+          </div>
+          <div class="search-result bg-white flex">
+            <img src="./images/beach-5.jpg" alt="beach-house" />
+            <div class="result-info">
+              <h3 class="text-3">Beach House With Great Views</h3>
+              <p class="text-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                quas expedita nostrum nemo pariatur ea eos corrupti. Ducimus,
+                optio fugit aliquid nam obcaecati impedit maiores delectus
+                assumenda perspiciatis.
+                <a class="text-link" href="#">See more details</a>
+              </p>
+              <a class="bg-1 text-white btn contact" href="#"
+                ><i class="fa fa-phone" aria-hidden="true"></i> Contact
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer bg-white flex">
+      <div class="flex-column footer-logo">
+        <p>
+          <span class="text-1">HAPPY</span> <span class="text-2">HOME</span>
+        </p>
+        <p class="text-3 logo-p">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Um das
+          perferendis laudantium iste recusandae exercitationem ler at aperiam
+          ullam eaque laborum dolor tempore nostrum mus, accusantium non rem
+          asperiores nam ipsa autem fugit illo della voluptatibus.
+        </p>
+      </div>
+      <div class="flex text-2 footer-links">
+        <div>
+          <h3 class="text-1">Categories</h3>
+          <hr class="bg-1" />
+          <ul>
+            <li><a class="text-2" href="#">Buy Home</a></li>
+            <li><a class="text-2" href="#">Buy Apartment</a></li>
+            <li><a class="text-2" href="#">Rent Home</a></li>
+            <li><a class="text-2" href="#">Rent Apartment</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-1">Navigation</h3>
+          <hr class="bg-1" />
+          <ul>
+            <li><a class="text-2" href="#">Home</a></li>
+            <li><a class="text-2" href="#">Login</a></li>
+            <li><a class="text-2" href="#">Terms & Conditions</a></li>
+            <li><a class="text-2" href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex footer-settings">
+        <div>
+          <h4 class="text-1">
+            LANGUAGE <span class="text-3 option">English</span>
+          </h4>
+          <h4 class="text-1">
+            COUNTRY <span class="text-3 option">United States</span>
+          </h4>
+          <h4 class="text-1">
+            CURRENCY <span class="text-3 option">US Dollar</span>
+          </h4>
+        </div>
+      </div>
+      <div class="footer-bar text-2 flex">
+        <p>Copyright © 2020 HappyHome.com. All Rights Reserved.</p>
+        <div>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-linkedin"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

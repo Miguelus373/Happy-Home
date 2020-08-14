@@ -1,0 +1,580 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #d35266;
+  --color-2: #888;
+  --color-3: #383838;
+  --simple-border: solid 1px lightgray;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f5f6;
+}
+
+/* ============== Common Styles ============== */
+
+.text-1 {
+  color: var(--color-1);
+}
+
+.text-2 {
+  color: var(--color-2);
+}
+
+.text-3 {
+  color: var(--color-3);
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-link {
+  color: rgb(94, 94, 250);
+  text-decoration: none;
+}
+
+.bg-1 {
+  background-color: var(--color-1);
+}
+
+.bg-2 {
+  background-color: var(--color-2);
+}
+
+.bg-3 {
+  background-color: var(--color-3);
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+/* ============== Navbar Styles ============== */
+
+.navbar {
+  height: auto;
+  font-size: 0.85rem;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  background-image: linear-gradient(to bottom, var(--color-3) 50%, #202020);
+}
+
+.logo {
+  align-items: inherit;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 3rem;
+  margin: 0.5rem;
+  width: auto;
+  transition: 0.6s;
+}
+
+.navbar span {
+  font-weight: 700;
+  display: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-left: 4%;
+  max-width: 7rem;
+  transition: color 0.4s;
+}
+
+.nav-btn {
+  text-decoration: none;
+  font-weight: 600;
+  border: none;
+  padding: 0.2rem 0.7rem;
+  margin-left: 4%;
+  display: none;
+}
+
+.search-btn-sm {
+  display: inline;
+}
+
+.user {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user i {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+/* ============== Header Styles ============== */
+
+.header {
+  justify-content: flex-end;
+  align-items: center;
+  padding: 2rem 0;
+  position: relative;
+  height: 11rem;
+}
+
+.header h1 {
+  text-shadow: 1px 1px 5px black;
+  margin: 0;
+}
+
+.slogan {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.search {
+  width: 60%;
+  margin: 1rem auto;
+  justify-content: center;
+  display: none;
+}
+
+.search-item {
+  height: 1.9rem;
+  padding: 0.5rem 0.7rem;
+  margin: 0.1rem;
+  font-size: 0.9rem;
+  border: none;
+  outline: none;
+}
+
+.zone {
+  padding: 0.4rem;
+}
+
+.search-btn {
+  text-decoration: none;
+  text-align: center;
+}
+
+.input {
+  width: 40%;
+}
+
+/* ============== Related Styles ============== */
+
+.top-section {
+  max-width: 32rem;
+  margin: 1rem;
+  padding: 0.2rem 2rem;
+  font-size: 0.8rem;
+  box-shadow: grey 0 0 10px;
+  border-radius: 4px;
+  border-radius: 5px;
+}
+
+.related {
+  margin: 0.6rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.related img {
+  width: 100%;
+  max-height: 10rem;
+  max-width: 16rem;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+.info {
+  justify-content: space-between;
+}
+
+.info h3 {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.info p {
+  margin: 0;
+}
+
+.contact {
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ============== Row Ads ============== */
+
+.ad-group {
+  margin: 1rem auto;
+  font-size: 0.8rem;
+}
+
+.view-all {
+  font-size: 0.8rem;
+}
+
+.row-ad {
+  height: auto;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template: repeat(4, 1fr) / 100%;
+  row-gap: 1.5rem;
+}
+
+.ad {
+  border: var(--simple-border);
+  transition: 0.5s;
+  border-radius: 8px;
+  position: relative;
+  height: 20rem;
+}
+
+.ad img {
+  position: relative;
+  width: 100%;
+  height: 60%;
+  top: 0;
+}
+
+.ad-info {
+  padding: 0 1rem 1rem;
+  height: auto;
+  position: relative;
+  bottom: 0;
+}
+
+/* ============== Footer Styles ============== */
+
+.footer {
+  border-top: var(--simple-border);
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  align-items: center;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.footer-logo span {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.logo-p {
+  padding: 0 2rem;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-links {
+  margin: 1rem 0;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer-links hr {
+  border: none;
+  height: 1px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+}
+
+.option {
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 0.2rem 0.4rem;
+  border: var(--simple-border);
+}
+
+.footer-settings {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bar {
+  padding: 1rem;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-top: var(--simple-border);
+}
+
+.footer-bar p {
+  margin: 0;
+  width: 70%;
+}
+
+.footer-bar i {
+  margin-left: 1rem;
+}
+
+/* ============== Search Page Styles ============== */
+
+.tool-bar {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-bottom: var(--simple-border);
+}
+
+.fa-th-list {
+  color: blue;
+}
+
+/* ============== Filters Styles ============== */
+.filters {
+  margin: 0.5rem 0.5rem 0 0;
+  padding: 1.5rem;
+  display: none;
+  border: var(--simple-border);
+  border-bottom: none;
+}
+
+.filters h4 {
+  margin: 0;
+}
+
+.checkbox {
+  margin: 0 0.5rem 1rem;
+}
+
+.extras {
+  font-size: 0.8rem;
+  width: 6.5rem;
+}
+
+.filters hr {
+  width: 100%;
+  margin: 0 auto;
+  height: 1px;
+  background-color: lightgray;
+  border: none;
+}
+
+/* ============== Results Styles ============== */
+
+.results {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+}
+
+.search-result {
+  margin: 0 1rem 1rem;
+  padding: 1rem;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 0 12px gray;
+}
+
+.search-result img {
+  width: 100%;
+  height: auto;
+}
+
+.result-info {
+  padding: 0 1rem;
+}
+
+.result-info p {
+  margin-bottom: 2rem;
+}
+
+/* ============== Media Querys ============== */
+@media only screen and (min-width: 575px) {
+  .top-section {
+    max-width: 85%;
+    margin: 2rem auto;
+  }
+
+  .related {
+    flex-wrap: nowrap;
+  }
+
+  .info {
+    max-width: 100%;
+    margin-left: 1rem;
+  }
+
+  .info h3 {
+    text-align: left;
+  }
+
+  .ad-group {
+    max-width: 85%;
+    padding: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .row-ad {
+    grid-template: 50% / repeat(2, 1fr);
+    grid-gap: 1.3rem;
+  }
+
+  .ad img {
+    height: 50%;
+  }
+
+  .display {
+    width: 100%;
+    padding: 0.8rem 3rem;
+    text-align: right;
+  }
+
+  .search-result {
+    flex-direction: row;
+  }
+
+  .search-result img {
+    width: 35%;
+  }
+
+  .footer-links {
+    width: 66.66%;
+  }
+
+  .footer-settings {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .navbar {
+    justify-content: start;
+    padding-left: 4.5rem;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .navbar span,
+  .nav-btn {
+    display: inline;
+  }
+
+  .search-btn-sm {
+    display: none;
+  }
+
+  .header {
+    height: 15rem;
+  }
+
+  .search,
+  .user {
+    display: flex;
+  }
+
+  .ad-group {
+    margin: 4rem auto;
+  }
+
+  .row-ad {
+    grid-template: 100% / repeat(4, 1fr);
+    column-gap: 1.2rem;
+  }
+
+  .ad img {
+    height: 42%;
+  }
+
+  .filters-sm {
+    display: none;
+  }
+
+  .filters {
+    display: block;
+  }
+
+  .search-result img {
+    width: 25%;
+    max-width: 11rem;
+  }
+
+  .footer-logo,
+  .footer-links {
+    width: 33.33%;
+  }
+
+  .footer-logo {
+    padding: 1rem 0;
+  }
+}
+
+/* ============== Hover Styles ============== */
+
+.nav-link:hover {
+  color: var(--color-1);
+}
+
+.logo img:hover {
+  transform: rotateY(180deg);
+}
+
+.zone,
+.top-section,
+.ad,
+.checkbox input,
+.option,
+.tool-bar i,
+.footer-bar i {
+  cursor: pointer;
+}
+
+.ad:hover {
+  box-shadow: grey 0 0 15px;
+}
+
+.ad img:hover {
+  cursor: zoom-in;
+}
+
+.text-link:hover,
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links a:hover {
+  color: var(--color-3);
+}
